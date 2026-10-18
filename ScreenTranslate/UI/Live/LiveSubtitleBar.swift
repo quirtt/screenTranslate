@@ -64,7 +64,6 @@ private struct LiveSubtitleView: View {
     var body: some View {
         content
             .multilineTextAlignment(.center)
-            .lineLimit(3)
             .fixedSize(horizontal: false, vertical: true)
             .padding(.horizontal, 14)
             .padding(.vertical, 8)
@@ -77,7 +76,7 @@ private struct LiveSubtitleView: View {
         switch display {
         case .subtitle(let text):
             Text(text)
-                .font(FontManager.shared.swiftUIFont(size: AppSettings.shared.popupFontSize + 6))
+                .font(FontManager.shared.swiftUIFont(size: AppSettings.shared.liveBarFontSize))
                 .foregroundStyle(.white)
         case .message(let text):
             Text(text)

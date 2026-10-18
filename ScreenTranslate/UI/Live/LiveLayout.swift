@@ -4,7 +4,7 @@ import CoreGraphics
 /// 영역 좌표는 화면 로컬·좌상단 원점(오버레이와 같음), 프레임은 AppKit 전역·좌하단 원점.
 nonisolated enum LiveLayout {
     static let barGap: CGFloat = 6
-    static let barMinWidth: CGFloat = 280
+    static let barMinWidth: CGFloat = 500
     static let screenMargin: CGFloat = 16
     static let minRegionSize = CGSize(width: 80, height: 24)
 
